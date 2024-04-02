@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.getElementById('my-form').addEventListener('submit', async (e) => {
             e.preventDefault(); // Prevent form submission
 
@@ -12,7 +11,7 @@ document.getElementById('my-form').addEventListener('submit', async (e) => {
 
             try {
                 await delay(delayInput);
-                document.getElementById('output').textContent = textInput;
+                document.getElementById('output').textContent = textInput; // Update the output div
             } catch (error) {
                 console.error('Error:', error);
             }
